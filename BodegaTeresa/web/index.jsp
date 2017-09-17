@@ -1,17 +1,19 @@
+<%-- 
+    Document   : index
+    Created on : 17-sep-2017, 16:17:03
+    Author     : elvinsallinas
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <jsp:include page="encabezadoestilos.jsp"></jsp:include>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodega Teresita</title>
     </head>
     <body>
-        <table>
+              <table>
             <tr>
                 <td>Usuario</td>
                 <td><input type="text" name="txtusuario"></td>
@@ -25,6 +27,5 @@ and open the template in the editor.
                 <td><input type="submit" value="Ingresar"></td>
             </tr>
         </table>
-        
     </body>
 </html>

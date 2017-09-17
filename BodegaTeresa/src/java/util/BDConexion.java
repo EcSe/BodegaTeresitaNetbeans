@@ -24,4 +24,9 @@ public class BDConexion {
         }
         return cn; 
     }
+    
+    public boolean validarUsuario(String usuario,String clave){
+        String sql ="";
+    }
+    
 }
