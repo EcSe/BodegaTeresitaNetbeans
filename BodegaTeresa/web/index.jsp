@@ -13,19 +13,21 @@
         <title>Bodega Teresita</title>
     </head>
     <body>
-              <table>
-            <tr>
-                <td>Usuario</td>
-                <td><input type="text" name="txtusuario"></td>
-            </tr>
-            <tr>
-                <td>Contraseña</td>
-                <td><input type="password" name="txtpassword"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Ingresar"></td>
-            </tr>
-        </table>
+        <form action="validarUsuario" method="post">
+            <table>
+                <tr>
+                    <td>Usuario</td>
+                    <td><input type="text" name="txtUsuario"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" name="txtClave"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Ingresar"></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>

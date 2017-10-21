@@ -4,9 +4,17 @@
         <servlet-name>productoservlet</servlet-name>
         <servlet-class>servlets.productoservlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>validarUsuario</servlet-name>
+        <servlet-class>servlets.validarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>productoservlet</servlet-name>
         <url-pattern>/productoservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>validarUsuario</servlet-name>
+        <url-pattern>/validarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

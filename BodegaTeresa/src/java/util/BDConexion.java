@@ -7,6 +7,11 @@ package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -26,7 +31,22 @@ public class BDConexion {
     }
     
     public boolean validarUsuario(String usuario,String clave){
-        String sql ="";
+        try {
+            String  sql = "select (1) from TBUsuario where Nombre = '"+usuario+"'"
+                    + "and Clave = '"+clave+"' ";
+            Statement st = BDConexion.Conectar().createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            
+            if(rs.next()) {return true;} 
+                    else {return false;}
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(BDConexion.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        
+        
     }
     
 }
